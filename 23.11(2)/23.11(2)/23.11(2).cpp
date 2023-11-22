@@ -89,7 +89,7 @@ void PrintDevice(const Device& d)
     cout << "Garanty: " << d.guarantee.day << "." << d.guarantee.month << "." << d.guarantee.year << "\n";
 }
 
-void Garanty(Device& d)
+void Guarantee(Device& d)
 {
     if (d.yeartoday > d.guarantee.year)
     {
@@ -115,5 +115,5 @@ int main()
     Device e;
     RandomDevice(e);
     PrintDevice(e);
-    Garanty(e);
+    Guarantee(e);
 }
