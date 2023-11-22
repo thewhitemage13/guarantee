@@ -1,16 +1,16 @@
-﻿#include <iostream>
+#include <iostream>
 #include <ctime>
 using namespace std;
 //1.Я генерирую дату покупки
 //2.генерирую дату конца гарантии 
 //3.Ввожу сам сегодняшнюю дату и если она больше,чем дата конца гарантии,то гарантия окончена,а если меньше,то наоброт-не окончена
-struct DataBuy {
+struct DateBuy {
     int day;
     int month;
     int year;
 };
 
-struct DataSell {
+struct DateSell {
     int daydevice;
     int monthdevice;
     int yeardevice;
@@ -22,8 +22,8 @@ struct Device {
     string devicemodel;
     string brand;
     float price;
-    DataSell device;
-    DataBuy guarantee;
+    DateSell device;
+    DateBuy guarantee;
     int daytoday;
     int monthtoday;
     int yeartoday;
